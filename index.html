@@ -4,29 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- [SEO 중요] 검색엔진 최적화 기본 태그 -->
     <title>INTELLIONE 인텔리원 경영컨설팅 | IT 구축 및 AI 솔루션 자문</title>
     <meta name="description" content="INTELLIONE(인텔리원) 경영컨설팅은 기업 성장 단계별 맞춤형 전략 기획, 재무 자문, 맞춤형 IT 시스템 구축 및 AI 솔루션 도입 컨설팅을 제공합니다.">
     <meta name="keywords" content="인텔리원, INTELLIONE, 경영컨설팅, 기업전략, IT구축, 시스템개발, 디지털혁신, AI솔루션, 마포구컨설팅">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://www.intellione.co.kr/">
 
-    <!-- [SEO 중요] 오픈 그래프 -->
     <meta property="og:type" content="website">
     <meta property="og:title" content="INTELLIONE 인텔리원 경영컨설팅">
     <meta property="og:description" content="전략 기획부터 맞춤형 IT 구축, AI 솔루션 도입까지 아우르는 통합 컨설팅 전문가 그룹">
     <meta property="og:url" content="https://www.intellione.co.kr/">
-    <meta property="og:image" content="https://www.intellione.co.kr/images/og-image.jpg"> 
+    <meta property="og:image" content="https://www.intellione.co.kr/image_22.png"> 
     <meta property="og:site_name" content="INTELLIONE">
 
     <style>
-        /* 기본 스타일 및 스무스 스크롤 적용 */
         html { scroll-behavior: smooth; }
         body { font-family: 'Malgun Gothic', sans-serif; margin: 0; padding: 0; background-color: #f8f9fa; color: #333; word-break: keep-all; }
         a { text-decoration: none; color: inherit; }
         ul { list-style: none; margin: 0; padding: 0; }
 
-        /* 헤더 스타일 */
         header { background-color: #fff; border-bottom: 1px solid #ddd; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 4px rgba(0,0,0,0.05); }
         .top-bar { display: flex; justify-content: flex-end; align-items: center; padding: 8px 20px; font-size: 12px; border-bottom: 1px solid #eee; background-color: #f1f1f1; }
         .top-bar a { margin-left: 15px; color: #555; transition: color 0.2s; }
@@ -35,20 +31,19 @@
         .lang-select { margin-left: 15px; background: none; border: none; font-size: 12px; color: #555; cursor: pointer; font-family: inherit; padding: 0; }
         .lang-select:focus { outline: none; }
         
-        .main-header { display: flex; justify-content: space-between; align-items: center; padding: 20px 40px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
-        .logo { font-size: 26px; font-weight: 900; color: #003366; letter-spacing: 1px;}
+        .main-header { display: flex; justify-content: space-between; align-items: center; padding: 15px 40px; max-width: 1200px; margin: 0 auto; flex-wrap: wrap; }
         
-        /* 네비게이션 메뉴 */
+        /* 로고 이미지 스타일 */
+        .logo img { max-height: 45px; width: auto; vertical-align: middle; }
+        
         .nav-menu ul { display: flex; }
-        .nav-menu li { margin-left: 30px; } /* 메뉴가 늘어나서 간격을 살짝 줄였습니다 */
+        .nav-menu li { margin-left: 30px; }
         .nav-menu a { font-weight: 600; color: #333; font-size: 16px; transition: color 0.3s; }
         .nav-menu a:hover { color: #0055a5; }
         
-        /* 햄버거 메뉴 버튼 */
         .menu-toggle { display: none; flex-direction: column; justify-content: space-between; width: 24px; height: 18px; cursor: pointer; }
         .menu-toggle span { display: block; height: 3px; width: 100%; background-color: #003366; border-radius: 2px; transition: all 0.3s ease; }
 
-        /* 메인 배너(Hero) 스타일 */
         .hero { 
             background: linear-gradient(rgba(0, 26, 77, 0.6), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80') center/cover no-repeat; 
             color: #fff; 
@@ -62,7 +57,6 @@
         .hero .btn { display: inline-block; padding: 14px 30px; background-color: #0055a5; color: #fff; text-decoration: none; font-weight: bold; border-radius: 30px; transition: background-color 0.3s; }
         .hero .btn:hover { background-color: #003366; }
 
-        /* 본문 섹션 스타일 */
         .content-section { padding: 100px 20px; text-align: center; }
         .content-section:nth-child(even) { background-color: #ffffff; }
         .container { max-width: 1000px; margin: 0 auto; }
@@ -70,21 +64,23 @@
         .content-section h2::after { content: ''; position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); width: 50px; height: 3px; background-color: #0055a5; }
         .content-section p { font-size: 18px; color: #666; line-height: 1.7; margin-bottom: 40px; }
 
-        /* 카드 UI */
+        /* CI 이미지 갤러리 영역 */
+        .ci-gallery { display: flex; justify-content: center; gap: 30px; margin-top: 40px; flex-wrap: wrap; }
+        .ci-gallery img { width: 100%; max-width: 350px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .ci-gallery img:hover { transform: translateY(-5px); }
+
         .card-grid { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; margin-top: 40px; }
         .card { background: #fff; border: 1px solid #eee; border-radius: 8px; padding: 30px; width: 280px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); text-align: left; flex: 1 1 280px; max-width: 350px;}
         .card h3 { color: #333; font-size: 20px; margin-top: 0; }
         .card p { font-size: 15px; margin-bottom: 0; }
 
-        /* 푸터 스타일 */
         footer { background-color: #1a1a1a; color: #bbb; padding: 30px 20px; text-align: center; font-size: 14px; }
 
-        /* 모바일 반응형 스타일 (화면 너비 768px 이하) */
         @media screen and (max-width: 768px) {
             .top-bar { justify-content: center; flex-wrap: wrap; }
             .top-bar a { margin: 5px 10px; }
             .main-header { padding: 15px 20px; }
-            .logo { font-size: 22px; }
+            .logo img { max-height: 35px; } 
             .menu-toggle { display: flex; }
             .nav-menu { display: none; width: 100%; margin-top: 15px; border-top: 1px solid #eee; padding-top: 10px; }
             .nav-menu.active { display: block; }
@@ -99,6 +95,7 @@
             .content-section h2 { font-size: 28px; }
             .content-section p { font-size: 15px; }
             .card { padding: 20px; }
+            .ci-gallery img { max-width: 100%; }
         }
     </style>
 </head>
@@ -114,7 +111,9 @@
             </select>
         </div>
         <div class="main-header">
-            <a href="#" class="logo">INTELLIONE</a>
+            <a href="#" class="logo">
+                <img src="./image_22.png" alt="INTELLIONE 로고">
+            </a>
             <div class="menu-toggle" id="mobile-menu">
                 <span></span>
                 <span></span>
@@ -125,7 +124,7 @@
                     <li><a href="#insights">Insights</a></li>
                     <li><a href="#introduce">Introduce</a></li>
                     <li><a href="#consulting">Consulting</a></li>
-                    <li><a href="#it-dev">IT & Dev</a></li> <!-- IT 메뉴 추가 -->
+                    <li><a href="#it-dev">IT & Dev</a></li>
                     <li><a href="#ai">AI</a></li>
                     <li><a href="#about">About</a></li>
                 </ul>
@@ -164,6 +163,11 @@
         <div class="container">
             <h2>Introduce</h2>
             <p>INTELLIONE은 지성(Intelligence)과 통합(One)을 바탕으로,<br>복잡한 경영 문제를 해결하는 대한민국 최고의 전문가 그룹입니다.<br>우리는 데이터와 인사이트를 연결하여 독보적인 솔루션을 도출합니다.</p>
+            
+            <div class="ci-gallery">
+                <img src="./image_20.png" alt="INTELLIONE Brand Identity 1">
+                <img src="./image_21.png" alt="INTELLIONE Brand Identity 2">
+            </div>
         </div>
     </section>
 
@@ -184,7 +188,6 @@
         </div>
     </section>
 
-    <!-- 새롭게 추가된 IT 구축 및 개발 섹션 -->
     <section id="it-dev" class="content-section">
         <div class="container">
             <h2>IT Build & Development</h2>
